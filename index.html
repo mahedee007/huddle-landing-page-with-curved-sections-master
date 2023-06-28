@@ -10,6 +10,22 @@
   <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pink: 'hsl(322, 100%, 66%)',
+              'light-pink': 'hsl(321, 100%, 78%)',
+              'light-red' : 'hsl(0, 100%, 63%)',
+              'very-dark-cyan': 'hsl(192, 100%, 9%)',
+              'very-pale-blue': 'hsl(207, 100%, 98%)',
+            }
+            
+        }
+      }
+    </script>
+
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -24,6 +40,11 @@
   </style>
 </head>
 <body>
+  <!-- Navbar Starts Here -->
+  <nav>
+    <img src="images/logo.svg" alt="huddle-logo">
+    <button class="rounded-full outline outline-light-pink">Try It Free</button>
+  </nav>
   Try it free
 
   Build The Community Your Fans Will Love
