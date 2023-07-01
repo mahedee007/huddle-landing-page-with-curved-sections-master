@@ -20,6 +20,12 @@
               'light-red' : 'hsl(0, 100%, 63%)',
               'very-dark-cyan': 'hsl(192, 100%, 9%)',
               'very-pale-blue': 'hsl(207, 100%, 98%)',
+      },
+      backgroundImage: {
+        'bg-top': "url('/images/bg-section-top-desktop-1.svg')",
+        'bg-top-1': "url('/images/bg-section-top-desktop-2.svg')",
+        'bg-bottom' : "url('/images/bg-section-bottom-desktop-1.svg')",
+        'bg-footer' :"url('/images/bg-footer-top-desktop.svg')",
       }
           }
         }
@@ -85,21 +91,23 @@
 <!-- Main Starts -->
 <main>
   <!-- Grow Together Section -->
-  <section class="grid grid-cols-2 justify-center items-center">
-    <div >
-      <h3>Grow Together</h3>
-      <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
-        Think of the insightful conversations you miss out on with a feedback form. </p>
-    </div>
-    <div>
-      <img src="images/illustration-grow-together.svg" alt="">
+  <section class="grow-together " >
+    <div class="px-20 place-content-center flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center justify-items-center items-center  gap-y-20">
+      <div >
+        <h3 class="text-3xl font-bold mb-7">Grow Together</h3>
+        <p class="font-sans">Generate meaningful discussions with your audience and build a <br> strong, loyal community. 
+          Think of the insightful conversations you miss out on with a feedback form. </p>
+      </div>
+      <div>
+        <img class="w-full" src="images/illustration-grow-together.svg" alt="">
+      </div>
     </div>
   </section>
 
    <!-- Grow Together Section ends -->
 
    <!-- Flowing Coversation Section Starts -->
-  <section class="grid grid-cols-2 justify-center items-center">
+  <section class="grid md:grid-cols-2 sm:grid-cols-1 grid-cols-1 justify-center items-center">
     
       <div>
         <img src="images/illustration-flowing-conversation.svg" alt="">
